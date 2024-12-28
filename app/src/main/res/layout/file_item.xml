@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/rounded_background"
+    android:elevation="4dp"
+    android:layout_marginBottom="8dp"
+    android:clipToOutline="true">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="12dp">
+
+        <TextView
+            android:id="@+id/fileNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/file_name_color"
+            android:text="File Name" />
+
+        <!-- Horizontal layout for time and file size -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/createdTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/created_time_color"
+                android:text="2023-10-17 12:45 PM" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | "
+                android:textSize="14sp"
+                android:textColor="@color/pipe_color" />
+
+            <TextView
+                android:id="@+id/fileSizeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/file_size_color"
+                android:text="2 MB" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/unhideIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/baseline_visibility_off_24"
+        android:contentDescription="Unhide Icon"
+        app:tint="@color/unhide_icon_tint"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp" />
+
+</LinearLayout>

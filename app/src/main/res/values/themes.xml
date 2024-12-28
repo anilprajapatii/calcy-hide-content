@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HideContentCalcy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+       <item name="android:statusBarColor">#0c0c0c</item>
+    </style>
+
+    <style name="Theme.HideContentCalcy" parent="Base.Theme.HideContentCalcy" />
+</resources>

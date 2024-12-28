@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightBlue">#03e3fc</color>
+    <color name="file_name_color">#888888</color>
+    <color name="created_time_color">#555555</color>
+    <color name="pipe_color">#555555</color>
+    <color name="file_size_color">#555555</color>
+    <color name="unhide_icon_tint">#007bff</color>
+</resources>
